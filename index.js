@@ -1,6 +1,5 @@
 const express = require('express')
 const cors = require('cors')
-const body_parser = require('body-parser')
 const dotenv = require('dotenv')
 const schoolRoutes = require('./routes/schoolRoutes');
 
@@ -8,7 +7,7 @@ dotenv.config()
 
 app = express()
 app.use(cors())
-app.use(body_parser.json())
+app.use(express.json())
 
 app.use('/api/schools', schoolRoutes);
 
