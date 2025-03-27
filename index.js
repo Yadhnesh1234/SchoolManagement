@@ -12,7 +12,7 @@ app.use(body_parser.json())
 
 app.use('/api/schools', schoolRoutes);
 
-const port = process.env.PORT | 3000
-app.listen(process.env.PORT,()=>{console.log(`Server Started at ${port}`)})
+// const port = process.env.PORT | 3000
+// app.listen(process.env.PORT,()=>{console.log(`Server Started at ${port}`)})
 
 module.exports = app;
